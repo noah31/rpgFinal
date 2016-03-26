@@ -12,7 +12,7 @@ private:
 	vector<string> mobs;
 	string name;
 	//Health points
-	float curHealth = maxHealth - pDamageTaken + mDamageTaken;
+	float curHealth = maxHealth - (pDamageTaken + mDamageTaken);
 	float maxHealth = stamina * 11;
 	float stamina;
 	float maxStamina = 99;
@@ -34,7 +34,8 @@ private:
 	string weapon;
 	int rawWeaponDmg;
 	//Experience
-	int level;
+	int level = charLevel;
+	int charLevel;
 	//Damage Resistance
 	float spirit;
 	float armor;
@@ -42,4 +43,6 @@ private:
 public:
 	Mob(string mobType);
 	string getCharType(string value);
+	void setCharLevel(int value);
+	int getCharLevel(int value);
 };
