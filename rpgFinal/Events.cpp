@@ -55,7 +55,7 @@ Events::Events(string mobType) {/*21 total*/
 			}
 			if (i == 20) {
 				//Stats for Donald J. Trump
-			}
+			}//
 		}
 	}
 }
