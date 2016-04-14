@@ -30,7 +30,7 @@ private:
 	//Normal Attack
 	float strength;
 	float maxStrength = 99;
-	float weaponDamage = rawWeaponDmg * (strength * .30 / 100 + 1); /*Raw Weapon Dmg x (30%) of Str = Weapon Damage*/
+	float weaponDamage;
 	string weapon;
 	int rawWeaponDmg;
 	//Experience
@@ -42,7 +42,10 @@ private:
 
 public:
 	Mob(string mobType);
+	void takeDamage(float pDmg, float mDmg);
+	float inflictDamage(int dmgType);
 	string getCharType(string value);
 	void setCharLevel(int value);
 	int getCharLevel(int value);
+	void setWeaponDamage(int rawWeaponDmg);
 };
