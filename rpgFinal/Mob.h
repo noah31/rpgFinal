@@ -12,17 +12,13 @@ private:
 	vector<string> mobs;
 	string name;
 	//Health points
-	float curHealth = maxHealth - (pDamageTaken + mDamageTaken);
-	float maxHealth = stamina * 11;
+	float curHealth;
+	float maxHealth;
 	float stamina;
 	float maxStamina = 99;
-	float pDamageTaken = pInitialDmgTaken * (armor * .5 / 100); /*30 armor = 15% physical damage reduction*/
-	float pInitialDmgTaken;
-	float mDamageTaken = mInitialDmgTaken * (spirit * .5 / 100); /*30 spirit = 15% magical damage reduction*/
-	float mInitialDmgTaken;
 	//Ability points
 	float curAP;
-	float maxAP = intellect * 8.25;
+	float maxAP;
 	float intellect;
 	float maxIntellect = 99;
 	float willPower;
@@ -48,4 +44,10 @@ public:
 	void setCharLevel(int value);
 	int getCharLevel(int value);
 	void setWeaponDamage(int rawWeaponDmg);
+
+	void reduceCurHP(float pDmg, float mDmg);
+	void setMaxStats();
+	float getMaxHealth();
+	float getMaxAP();
+
 };

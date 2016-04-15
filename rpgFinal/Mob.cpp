@@ -1,5 +1,7 @@
 #include "Mob.h"
 
+using namespace std;
+
 Mob::Mob(string mobType) {
 	mobs.push_back("A Pack of Wolves");
 	mobs.push_back("A Mob of Goblins");
@@ -72,6 +74,21 @@ float Mob::inflictDamage(int dmgType) {
 
 	}
 }
-void setWeaponDamage(int rawWeaponDmg){
+void Mob::setWeaponDamage(int rawWeaponDmg){
 	weaponDamage = rawWeaponDmg * (strength * .30 / 100 + 1); /*Raw Weapon Dmg x (30%) of Str = Weapon Damage*/
+}
+
+void Mob::reduceCurHP(float pDmg, float mDmg) {
+	float finalPDmg;
+	finalPDmg = pDmg * (armor * .5 / 100); /*30 armor = 15% physical damage reduction*/
+	float finalMDmg;
+	finalMDmg = mDmg * (spirit * .5 / 100); /*30 spirit = 15% magical damage reduction*/
+	curHealth -= (finalPDmg + finalMDmg);
+}
+void Mob::setMaxStats() {
+	maxHealth = stamina * 11;
+	maxAP = intellect * 8.25;
+}
+float Mob::getMaxHealth() {
+	return maxHealth;
 }
