@@ -72,9 +72,12 @@
     <ClCompile Include="Wizard.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Attributes.h" />
+    <ClInclude Include="Entity.h" />
     <ClInclude Include="Mob.h" />
     <ClInclude Include="Events.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="Random.h" />
     <ClInclude Include="Warrior.h" />
     <ClInclude Include="Wizard.h" />
   </ItemGroup>
