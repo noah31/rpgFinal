@@ -74,6 +74,7 @@
   <ItemGroup>
     <ClInclude Include="Attributes.h" />
     <ClInclude Include="Entity.h" />
+    <ClInclude Include="Equiptment.h" />
     <ClInclude Include="Mob.h" />
     <ClInclude Include="Events.h" />
     <ClInclude Include="Player.h" />

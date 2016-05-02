@@ -12,8 +12,8 @@ private:
 	float maxHealth;
 	int level;
 public:
-	void setName(const string &value);
+	virtual void setName(const string &value);
 	string getName();
-	void setMaxHP(float stam);
+	virtual void setMaxHP(const float &value);
 	float getHealth();
 };
