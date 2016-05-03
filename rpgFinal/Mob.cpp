@@ -66,7 +66,7 @@ void Mob::setCharLevel(int value) {
 	charLevel = value;
 }
 void Mob::takeDamage(float pDmg, float mDmg) {
-	curHealth - ((pDmg * (armor*.5 / 100)) + (mDmg * (spirit * .5 / 100)));
+	curHealth -= ((pDmg * (armor*.5 / 100)) + (mDmg * (spirit * .5 / 100)));
 }
 float Mob::inflictDamage(int dmgType) {
 	switch (dmgType) {

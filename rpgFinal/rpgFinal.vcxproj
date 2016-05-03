@@ -64,9 +64,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Equipment.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Mob.cpp" />
-    <ClCompile Include="Events.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Warrior.cpp" />
     <ClCompile Include="Wizard.cpp" />
@@ -74,12 +74,11 @@
   <ItemGroup>
     <ClInclude Include="Attributes.h" />
     <ClInclude Include="Entity.h" />
-    <ClInclude Include="Equiptment.h" />
+    <ClInclude Include="Equipment.h" />
     <ClInclude Include="Mob.h" />
-    <ClInclude Include="Events.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Random.h" />
-    <ClInclude Include="Warrior.h" />
+    <ClInclude Include="Abilities.h" />
     <ClInclude Include="Wizard.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
