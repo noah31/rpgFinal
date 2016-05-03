@@ -15,6 +15,23 @@ string Weapon::getName() {
 float Weapon::getBaseDmg() {
 	return baseDmg;
 }
+float Weapon::getWMod(string attribute) {
+	if (attribute == "sta") {
+		return wStaMod;
+	}
+	if (attribute == "str") {
+		return wStrMod;
+	}
+	if (attribute == "int") {
+		return wIntMod;
+	}
+	if (attribute == "wp") {
+		return wWpMod;
+	}
+	if (attribute == "sp") {
+		return wSpMod;
+	}
+}
 
 //Armor class
 void Armor::setHead(string name, int value, float staMod, float strMod, float intMod, float wpMod, float spMod) {

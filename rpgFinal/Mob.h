@@ -9,7 +9,6 @@ using namespace std;
 
 class Mob {
 private:
-	vector<string> mobs;
 	string name;
 	//Health points
 	float curHealth;

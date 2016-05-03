@@ -17,5 +17,10 @@ public:
 	string getName();
 	virtual void setMaxHP(const float &value);
 	float getHealth();
+	float getDamage(){
+		float damage = 0;
+		damage += getBaseDmg();
+
+	}
 	
 };

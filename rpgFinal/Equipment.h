@@ -7,11 +7,13 @@ private:
 	string name;
 	float baseDmg;
 	bool oneHand, twoHand, staff;
+	float wStaMod, wStrMod, wIntMod, wWpMod, wSpMod;
 public:
 	string getName();
 	void setName(const string &value);
 	float getBaseDmg();
 	void setBaseDmg(const float &value);
+	float getWMod(string attribute);
 };
 
 class Armor{
