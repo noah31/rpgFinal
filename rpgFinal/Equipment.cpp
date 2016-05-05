@@ -34,44 +34,64 @@ float Weapon::getWMod(string attribute) {
 }
 
 //Armor class
-void Armor::setHead(string name, int value, float staMod, float strMod, float intMod, float wpMod, float spMod) {
+void Armor::setHead(const string &name, const int &armor, const string &stat, const float &statMod) {
+	if (stat == "str")
+		hStrMod = statMod;
+	if (stat == "sta")
+		hStaMod = statMod;
+	if (stat == "int")
+		hIntMod = statMod;
+	if (stat == "wp")
+		hWpMod = statMod;
+	if (stat == "sp")
+		hSpMod = statMod;
 	hName = name;
-	hValue = value;
-	hStaMod = staMod;
-	hStrMod = strMod;
-	hIntMod = intMod;
-	hWpMod = wpMod;
-	hSpMod = spMod;
+	hValue = armor;
 	head = true;
 }
-void Armor::setChest(string name, int value, float staMod, float strMod, float intMod, float wpMod, float spMod) {
+void Armor::setChest(const string &name, const int &armor, const string &stat, const float &statMod) {
+	if (stat == "str")
+		cStrMod = statMod;
+	if (stat == "sta")
+		cStaMod = statMod;
+	if (stat == "int")
+		cIntMod = statMod;
+	if (stat == "wp")
+		cWpMod = statMod;
+	if (stat == "sp")
+		cSpMod = statMod;
 	cName = name;
-	cValue = value;
-	cStaMod = staMod;
-	cStrMod = strMod;
-	cIntMod = intMod;
-	cWpMod = wpMod;
-	cSpMod = spMod;
+	cValue = armor;
 	chest = true;
 }
-void Armor::setBoot(string name, int value, float staMod, float strMod, float intMod, float wpMod, float spMod) {
+void Armor::setBoot(const string &name, const int &armor, const string &stat, const float &statMod) {
+	if (stat == "str")
+		bStrMod = statMod;
+	if (stat == "sta")
+		bStaMod = statMod;
+	if (stat == "int")
+		bIntMod = statMod;
+	if (stat == "wp")
+		bWpMod = statMod;
+	if (stat == "sp")
+		bSpMod = statMod;
 	bName = name;
-	bValue = value;
-	bStaMod = staMod;
-	bStrMod = strMod;
-	bIntMod = intMod;
-	bWpMod = wpMod;
-	bSpMod = spMod;
+	bValue = armor;
 	boots = true;
 }
-void Armor::setShield(string name, int value, float staMod, float strMod, float intMod, float wpMod, float spMod) {
+void Armor::setShield(const string &name, const int &armor, const string &stat, const float &statMod) {
+	if (stat == "str")
+		sStrMod = statMod;
+	if (stat == "sta")
+		sStaMod = statMod;
+	if (stat == "int")
+		sIntMod = statMod;
+	if (stat == "wp")
+		sWpMod = statMod;
+	if (stat == "sp")
+		sSpMod = statMod;
 	sName = name;
-	sValue = value;
-	sStaMod = staMod;
-	sStrMod = strMod;
-	sIntMod = intMod;
-	sWpMod = wpMod;
-	sSpMod = spMod;
+	sValue = armor;
 	shield = true;
 }
 string Armor::getHName() {
@@ -99,8 +119,8 @@ float Armor::getSValue() {
 	return sValue;
 }
 float Armor::getTotalArmor() {
-	float temp;
-	temp = hValue + cValue + bValue + sValue;
+	float temp = 0;
+	temp += hValue + cValue + bValue + sValue;
 	return temp;
 }
 float Armor::getHMod(string attribute) {

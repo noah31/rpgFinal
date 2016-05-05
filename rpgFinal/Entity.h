@@ -20,7 +20,8 @@ public:
 	float getDamage(){
 		float damage = 0;
 		damage += getBaseDmg();
-
+		damage *= getHMod("str") + getCMod("str") + getBMod("str") + getSMod("str");
+		//not finished
 	}
 	
 };

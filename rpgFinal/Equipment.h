@@ -27,10 +27,10 @@ private:
 	float hWpMod, cWpMod, bWpMod, sWpMod;
 	float hSpMod, cSpMod, bSpMod, sSpMod;
 public:
-	void setHead(string name, int value, float staMod, float strMod, float intMod, float wpMod, float spMod);
-	void setChest(string name, int value, float staMod, float strMod, float intMod, float wpMod, float spMod);
-	void setBoot(string name, int value, float staMod, float strMod, float intMod, float wpMod, float spMod);
-	void setShield(string name, int value, float staMod, float strMod, float intMod, float wpMod, float spMod);
+	void setHead(const string &name, const int &armor, const string &stat, const float &statMod);
+	void setChest(const string &name, const int &armor, const string &stat, const float &statMod);
+	void setBoot(const string &name, const int &armor, const string &stat, const float &statMod);
+	void setShield(const string &name, const int &armor, const string &stat, const float &statMod);
 	string getHName();
 	string getCName();
 	string getBName();
