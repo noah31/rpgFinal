@@ -26,5 +26,34 @@ private:
 	float spirit;
 	float armor;
 public:
-
+	void setStamina(float value){
+		stamina = value;
+	}
+	void setStrength(float value){
+		strength = value;
+	}
+	void setIntellect(float value){
+		intellect = value;
+	}
+	void setWillPower(float value){
+		willPower = value;
+	}
+	void setSpirit(float value){
+		spirit = value;
+	}
+	float getStamina(){
+		return stamina;
+	}
+	float getStrength(){
+		return strength;
+	}
+	float getIntellect(){
+		return intellect;
+	}
+	float getWillPower(){
+		return willPower;
+	}
+	float getSpirit(){
+		return spirit;
+	}
 };

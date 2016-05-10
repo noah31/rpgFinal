@@ -4,36 +4,12 @@
 #include <string>
 #include <stdlib.h>
 #include <vector>
+#include "Entity.h"
 
 using namespace std;
 
-class Mob {
+class Mob : public Entity{
 private:
-	string name;
-	//Health points
-	float curHealth;
-	float maxHealth;
-	float stamina;
-	float maxStamina = 99;
-	//Ability points
-	float curAP;
-	float maxAP;
-	float intellect;
-	float maxIntellect = 99;
-	float willPower;
-	float maxWillPower = 99;
-	//Normal Attack
-	float strength;
-	float maxStrength = 99;
-	float weaponDamage;
-	string weapon;
-	int rawWeaponDmg;
-	//Experience
-	int level = charLevel;
-	int charLevel;
-	//Damage Resistance
-	float spirit;
-	float armor;
 
 public:
 	Mob(string mobType);
