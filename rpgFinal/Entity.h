@@ -23,5 +23,6 @@ public:
 		damage *= getHMod("str") + getCMod("str") + getBMod("str") + getSMod("str");
 		//not finished
 	}
-	
+	float getTotalMod(string attribute);
+	int getLevel();
 };

@@ -2,6 +2,11 @@
 
 using namespace std;
 
+Mob::Mob(){
+	mob[0].setName("A Pack of Wolves");
+	int temp 
+	mob[0].setStamina()
+}
 Mob::Mob(string mobType) {
 	mobs.push_back("A Pack of Wolves");
 	mobs.push_back("A Mob of Goblins");

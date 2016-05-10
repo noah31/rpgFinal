@@ -8,10 +8,11 @@
 
 using namespace std;
 
-class Mob : public Entity{
+class Mob : public Entity, public Player{
 private:
-
+	Entity mob[21];
 public:
+	Mob();
 	Mob(string mobType);
 	void takeDamage(float pDmg, float mDmg);
 	float inflictDamage(int dmgType);
