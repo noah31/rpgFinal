@@ -12,7 +12,7 @@ private:
 	float curHealth;
 	float maxHealth;
 	int level;
-public:
+	public:
 	virtual void setName(const string &value);
 	string getName();
 	virtual void setMaxHP(const float &value);

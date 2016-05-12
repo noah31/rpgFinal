@@ -3,8 +3,10 @@
 using namespace std;
 
 Mob::Mob(){
+	int charlevel = 1;
 	mob[0].setName("A Pack of Wolves");
-	int temp 
+	int temp = 0;
+	temp = charlevel * 
 	mob[0].setStamina()
 }
 Mob::Mob(string mobType) {
