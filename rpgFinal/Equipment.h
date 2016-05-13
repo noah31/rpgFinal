@@ -14,6 +14,7 @@ public:
 	float getBaseDmg();
 	void setBaseDmg(const float &value);
 	float getWMod(string attribute);
+	void setWMod(string attribute, float modValue);
 };
 
 class Armor{

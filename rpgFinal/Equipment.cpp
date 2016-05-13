@@ -32,6 +32,23 @@ float Weapon::getWMod(string attribute) {
 		return wSpMod;
 	}
 }
+void Weapon::setWMod(string attribute, float modValue){
+	if (attribute == "sta") {
+		wStaMod = modValue;
+	}
+	if (attribute == "str") {
+		wStrMod = modValue;
+	}
+	if (attribute == "int") {
+		wIntMod = modValue;
+	}
+	if (attribute == "wp") {
+		wWpMod = modValue;
+	}
+	if (attribute == "sp") {
+		wSpMod = modValue;
+	}
+}
 
 //Armor class
 void Armor::setHead(const string &name, const int &armor, const string &stat, const float &statMod) {

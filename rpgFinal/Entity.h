@@ -12,6 +12,10 @@ private:
 	float curHealth;
 	float maxHealth;
 	int level;
+	Weapon oneHand[8];
+	Weapon twoHand[8];
+	Weapon staff[8];
+	Armor head[]
 	public:
 	virtual void setName(const string &value);
 	string getName();
